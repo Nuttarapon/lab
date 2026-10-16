@@ -1,0 +1,12 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; }
+.container { max-width: 900px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+h1, h3 { color: #333; }
+form { display: flex; flex-direction: column; gap: 10px; margin-bottom: 30px; background: #fafafa; padding: 20px; border-radius: 6px; border: 1px solid #eee; }
+input, textarea, button { padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px; }
+button { background-color: #007bff; color: white; border: none; cursor: pointer; font-weight: bold; }
+button:hover { background-color: #0056b3; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+th { background-color: #007bff; color: white; }
+.btn-delete { background-color: #dc3545; color: white; border: none; padding: 6px 10px; border-radius: 4px; cursor: pointer; }
+.btn-delete:hover { background-color: #bd2130; }

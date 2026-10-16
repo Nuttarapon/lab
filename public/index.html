@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab Equipment & Room Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ระบบจองห้องปฏิบัติการและอุปกรณ์แล็บ</h1>
+
+        <!-- ฟอร์มเพิ่มข้อมูลการจอง -->
+        <form id="reservationForm">
+            <h3>สร้างรายการจองใหม่</h3>
+            <input type="text" id="requester" placeholder="ชื่อ-นามสกุล ผู้จอง" required>
+            <input type="text" id="equipment" placeholder="ชื่ออุปกรณ์ / ห้อง (เช่น Oscilloscope, Lab 302)" required>
+            <input type="date" id="date" required>
+            <input type="text" id="time_slot" placeholder="ช่วงเวลา (เช่น 09:00 - 12:00)" required>
+            <textarea id="purpose" placeholder="วัตถุประสงค์ในการใช้งาน"></textarea>
+            <button type="submit">ยืนยันการจอง</button>
+        </form>
+
+        <!-- ตารางแสดงรายการจอง -->
+        <h3>รายการจองทั้งหมด</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>ผู้จอง</th>
+                    <th>อุปกรณ์ / ห้อง</th>
+                    <th>วันที่</th>
+                    <th>เวลา</th>
+                    <th>สถานะ</th>
+                    <th>จัดการ</th>
+                </tr>
+            </thead>
+            <tbody id="reservationTableBody">
+                <!-- ข้อมูลจะถูกโหลดมาแสดงตรงนี้ด้วย JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
